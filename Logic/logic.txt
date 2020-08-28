@@ -1,0 +1,16 @@
+private fun grid() {
+        val casos: Int = 4
+        for (i in 0 until casos) {
+            val rows: Int = 3
+            val columns: Int = 3
+            if (rows == columns && rows > 1) {
+                if (rows % 2 == 0) println("L") else println("R")
+            } else if (rows > columns && columns > 1) {
+                if (columns % 2 == 0) println("U") else println("D")
+            } else if (columns > rows) {
+                if (rows % 2 == 0) println("L") else println("R")
+            } else if (columns == 1) {
+                if (rows == 1) println("R") else println("D")
+            }
+        }
+    }
